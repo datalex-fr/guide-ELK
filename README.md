@@ -1,3 +1,5 @@
+
+
 ![](https://files.gitbook.com/v0/b/gitbook-legacy-files/o/assets%2F-MhdSzY_7K9n5aQAlJq8%2F-MhjO8LUqTyOFXapnFW8%2F-MhjbPCHLlWnm6PkgDr0%2Felk-architecture.jpg?alt=media&token=3829f366-7fca-4d39-9f57-b62c0f40770a)
 
 ## 
@@ -5,6 +7,8 @@
 I Introduction.
 
 Cette stack permet l’indexation et l’analyse de presque tout type de source de données structurée et non structurée, comme des logs et les visualiser ensuite sous forme de tableaux et de graphiques. Chaque couche peut être installé en instance client-serveur. Optimisé pour la sécurité informatique des infrastructures, il peut être aussi utilisé en data science avec le client Python "Eland" sur elasticsearch et ainsi pouvoir lancer des opérations de type Numpy, Pandas, Scikit-learn etc. Mais il est aussi possible de faire du machine learning avec le X-pack intégré à la suite Elastic. De plus, Metricbeat et Packetbeat seront utiles pour la surveillance réseaux et systèmes.
+
+
 
 ![](https://files.gitbook.com/v0/b/gitbook-legacy-files/o/assets%2F-MhdSzY_7K9n5aQAlJq8%2F-MhjO8LUqTyOFXapnFW8%2F-Mhjqh7iMQFwch5zaTe1%2Fblog-machine-learning-5-4-release.jpg?alt=media&token=97e20b58-debb-4570-a301-1dcea19ec8c9)
 
@@ -25,18 +29,15 @@ III Développement de traitements pour exploiter les logs d’activités.
 
 L'analyse des logs est un processus complexe qui doit suivre les bonnes pratiques suivantes :
 
--   **La détection et la reconnaissance des patterns** : cela fait référence au filtrage des messages entrants sur la base d'un pattern souvent combiné avec l'utilisation des expressions régulières. Elle fait partie intégrante de l'analyse des logs car elle permet de détecter plus rapidement les anomalies.
-    
--   **La normalisation des logs** : ce sont le processus de conversion des éléments de logs tels que les adresses IP ou les horodatages, dans un format commun pour toutes vos équipes.
-    
--   **La classification et le balisage** : ce sont le processus de balisage (tag) des messages avec des mots-clés et de leur catégorisation en classes. Cela vous permet de filtrer et de personnaliser la façon dont vous visualisez les données.
-    
--   **L'analyse de corrélation** : fait référence à la collecte de données provenant de différentes sources et à la recherche de messages appartenant à un événement spécifique. Par exemple, en cas d'activité malveillante, il vous permet de filtrer et de corréler les logs provenant de vos périphériques réseaux, pare-feu, serveurs et autres sources afin de très rapidement détecter la source du problème.
-    
--   **Alerte** : L'analyse de corrélation est généralement associée aux systèmes d'alerte, en fonction du pattern que vous avez identifié, vous pouvez créer des alertes lorsque votre analyseur de logs détecte une activité anormale.
-    
+La détection et la reconnaissance des patterns : cela fait référence au filtrage des messages entrants sur la base d'un pattern souvent combiné avec l'utilisation des expressions régulières. Elle fait partie intégrante de l'analyse des logs car elle permet de détecter plus rapidement les anomalies.
 
-![](https://files.gitbook.com/v0/b/gitbook-legacy-files/o/assets%2F-MhdSzY_7K9n5aQAlJq8%2F-MhoeGmccg6iOY6xLDiY%2F-MhoiKwFeMn7cgewMoTm%2FDfqTyH7WkAUDW5F.gif?alt=media&token=a6669dbb-50d9-4211-b86e-45c698e75fd3)
+La normalisation des logs : ce sont le processus de conversion des éléments de logs tels que les adresses IP ou les horodatages, dans un format commun pour toutes vos équipes.
+
+La classification et le balisage : ce sont le processus de balisage (tag) des messages avec des mots-clés et de leur catégorisation en classes. Cela vous permet de filtrer et de personnaliser la façon dont vous visualisez les données.
+
+L'analyse de corrélation : fait référence à la collecte de données provenant de différentes sources et à la recherche de messages appartenant à un événement spécifique. Par exemple, en cas d'activité malveillante, il vous permet de filtrer et de corréler les logs provenant de vos périphériques réseaux, pare-feu, serveurs et autres sources afin de très rapidement détecter la source du problème.
+
+Alerte : L'analyse de corrélation est généralement associée aux systèmes d'alerte, en fonction du pattern que vous avez identifié, vous pouvez créer des alertes lorsque votre analyseur de logs détecte une activité anormale.
 
 ETL, les 3 pipelines de Logstash :
 
